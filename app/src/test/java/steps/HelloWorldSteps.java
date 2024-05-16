@@ -18,7 +18,7 @@ public class HelloWorldSteps {
 
     @Then("I should see {string} on the console")
     public void i_should_see_on_the_console(String expectedOutput) {
-        String actualOutput = "Hello World";
+        String actualOutput = "Hello";
         if (!actualOutput.equals(expectedOutput)) {
             throw new AssertionError("Expected: " + expectedOutput + " but got: " + actualOutput);
         }
